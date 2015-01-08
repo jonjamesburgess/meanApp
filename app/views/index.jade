@@ -1,0 +1,26 @@
+//- app/views/index.jade
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        base(href="/")
+
+        title= "Starter MEAN Single Page Application"
+
+        link(rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css")
+
+        script(src='libs/angular/angular.min.js')
+        script(src='libs/angular-route/angular-route.min.js')
+
+        script(src="js/controllers/MainCtrl.js")
+        script(src="js/controllers/GeekCtrl.js")
+        script(src="js/controllers/NerdCtrl.js")
+        script(src="js/services/NerdService.js")
+        script(src="js/appRoutes.js")
+        script(src="js/app.js")
+
+    body(ng-app="meanApp")
+        include ./partials/navbar.jade
+        .container
+            .row
+                .col-sm-12(ng-view)

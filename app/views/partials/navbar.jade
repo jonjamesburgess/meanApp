@@ -1,0 +1,15 @@
+//- app/views/partials/navbar.jade
+.navbar.navbar-inverse.navbar-static-top
+  .container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/') meanApp
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(id='navbarSignup', href='/nerds')= 'Nerds'
+        li
+          a(id='navbarLogin', href='/geeks')= 'Geeks'
