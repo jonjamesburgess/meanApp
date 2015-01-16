@@ -1,0 +1,9 @@
+data/*
+node_modules/*
+public/lib/*
+npm-debug.log
+*.log
+*.ipc
+*.pid
+*.DS_Store
+.DS_Store
